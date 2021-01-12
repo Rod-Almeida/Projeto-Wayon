@@ -9,8 +9,8 @@ import { UserListService } from './user-list.service';
 export class UserListComponent implements OnInit {
   panelOpenState = false;
   userList: Array<any>;
-  lat: number = -37.3159;
-  lng: number = 81.1496;
+  // lat: number = -37.3159;
+  // lng: number = 81.1496;
 
   constructor(private userListService: UserListService) {}
 
