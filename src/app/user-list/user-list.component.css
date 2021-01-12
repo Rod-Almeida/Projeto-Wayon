@@ -1,0 +1,32 @@
+.container{
+    background-color: rgb(228, 228, 228);
+    height: 90%;
+}
+
+.userPanel{
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+mat-expansion-panel{
+    margin: auto;
+}
+.grid{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    align-content: start;
+}
+
+.fullName{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.phone{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+agm-map{
+    height: 100px;
+}

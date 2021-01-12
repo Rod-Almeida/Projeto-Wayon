@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="userPanel">
+    <mat-accordion>
+        <mat-expansion-panel hideToggle *ngFor="let item of userList; let i = index">
+          <mat-expansion-panel-header>
+            <mat-panel-title>{{item.username}}
+            </mat-panel-title>
+            <mat-panel-description>
+              {{item.email}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div class="grid"> 
+            <div class="fullName"> <h3>Nome Completo: </h3><div>{{item.name}}</div>
+            </div>
+            <div class="phone"> <h3>Telefone: </h3><div>{{item.phone}}</div>
+            </div>
+            <div class="website"> <h3>Site: </h3><div>{{item.website}}</div>
+            </div>
+            <div class="companyName"> <h3>Nome da Empresa: </h3><div>{{item.company.name}}</div>
+            </div>
+            <agm-map [latitude]="lat" [longitude]="lng"></agm-map>
+
+        </div>
+
+        </mat-expansion-panel>
+      </mat-accordion>
+      
+    </div>
+</div>
+
+
+
